@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ageTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,99 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BkRound" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-pO-MpK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Whats-Your-Age" translatesAutoresizingMaskIntoConstraints="NO" id="gY3-Yo-rLS" userLabel="WhatAgeLogo">
+                                <rect key="frame" x="151" y="74" width="300" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="cjT-WU-sdM"/>
+                                    <constraint firstAttribute="width" constant="300" id="nf3-uS-FWZ"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How Old Are You?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BIN-50-XVz">
+                                <rect key="frame" x="151" y="257" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2Vn-dy-PVK"/>
+                                    <constraint firstAttribute="height" constant="40" id="pqq-me-RIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAX-jf-gd8" userLabel="AgeMessageTxt">
+                                <rect key="frame" x="133" y="222" width="325" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="U8v-6y-ZtC"/>
+                                    <constraint firstAttribute="height" constant="52" id="cZf-aS-OnU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-SY-5qN">
+                                <rect key="frame" x="152" y="378" width="296" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="ijX-4W-2Lc"/>
+                                    <constraint firstAttribute="width" constant="296" id="rGq-db-mQY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Play Again" image="playAgainBtn">
+                                    <color key="titleColor" red="0.023232984293193759" green="0.023232984293193759" blue="0.023232984293193759" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPlayAgainBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ava-gr-JsC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eb-CS-o4o" userLabel="PlayBtn">
+                                <rect key="frame" x="208" y="343" width="186" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="9je-nh-AiN"/>
+                                    <constraint firstAttribute="width" constant="186" id="sOJ-fV-lV1"/>
+                                </constraints>
+                                <state key="normal" image="playBtn"/>
+                                <connections>
+                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IYv-jx-mTQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9gf-pO-MpK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7BL-US-mtQ"/>
+                            <constraint firstItem="gY3-Yo-rLS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9g2-2w-44Z"/>
+                            <constraint firstItem="BIN-50-XVz" firstAttribute="top" secondItem="YAX-jf-gd8" secondAttribute="bottom" constant="14" id="Bpx-50-yyO"/>
+                            <constraint firstItem="gY3-Yo-rLS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="E4k-IM-LBS"/>
+                            <constraint firstItem="3Uw-SY-5qN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Est-ja-3TG"/>
+                            <constraint firstItem="BIN-50-XVz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F4r-Ae-Ezy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Uw-SY-5qN" secondAttribute="bottom" constant="128" id="JKx-Go-nTz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9gf-pO-MpK" secondAttribute="trailing" constant="-20" id="b5x-Cf-H5x"/>
+                            <constraint firstItem="gY3-Yo-rLS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="dAu-P3-2Pc"/>
+                            <constraint firstItem="9gf-pO-MpK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="f3k-Tv-kYw"/>
+                            <constraint firstItem="YAX-jf-gd8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j7m-ed-2wS"/>
+                            <constraint firstItem="BIN-50-XVz" firstAttribute="top" secondItem="gY3-Yo-rLS" secondAttribute="bottom" constant="84" id="mdv-6l-ioS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9gf-pO-MpK" secondAttribute="bottom" id="nn3-tu-1Uy"/>
+                            <constraint firstItem="6eb-CS-o4o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pCd-Vi-My5"/>
+                            <constraint firstItem="3Uw-SY-5qN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYP-5q-5Xw"/>
+                            <constraint firstItem="6eb-CS-o4o" firstAttribute="top" secondItem="BIN-50-XVz" secondAttribute="bottom" constant="46" id="x4R-Wa-Qaq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageMessage" destination="YAX-jf-gd8" id="eWH-lT-iuo"/>
+                        <outlet property="enterAgeTxt" destination="BIN-50-XVz" id="axz-bT-qjs"/>
+                        <outlet property="playAgain" destination="3Uw-SY-5qN" id="5EY-YH-E6I"/>
+                        <outlet property="playBtn" destination="6eb-CS-o4o" id="woD-gg-2Se"/>
+                        <outlet property="whatAgeLogo" destination="gY3-Yo-rLS" id="3en-83-ndl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BkRound" width="1667" height="1667"/>
+        <image name="Whats-Your-Age" width="592" height="62"/>
+        <image name="playAgainBtn" width="600" height="200"/>
+        <image name="playBtn" width="524" height="523"/>
+    </resources>
 </document>
