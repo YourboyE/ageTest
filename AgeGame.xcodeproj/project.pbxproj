@@ -18,6 +18,13 @@
 		DB54863C1D3FC435003E907A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB54863B1D3FC435003E907A /* Default-568h@2x.png */; };
 		DB54863F1D3FC435003E907A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB54863D1D3FC435003E907A /* MainStoryboard.storyboard */; };
 		DB5486421D3FC435003E907A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5486411D3FC435003E907A /* ViewController.m */; };
+		DB54864E1D3FCBC4003E907A /* 28541-NXEANP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5486481D3FCBC4003E907A /* 28541-NXEANP.jpg */; };
+		DB54864F1D3FCBC4003E907A /* BkRound.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5486491D3FCBC4003E907A /* BkRound.png */; };
+		DB5486511D3FCBC4003E907A /* Illustration05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB54864B1D3FCBC4003E907A /* Illustration05.jpg */; };
+		DB5486521D3FCBC4003E907A /* playBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DB54864C1D3FCBC4003E907A /* playBtn.png */; };
+		DB5486531D3FCBC4003E907A /* Whats-Your-Age.png in Resources */ = {isa = PBXBuildFile; fileRef = DB54864D1D3FCBC4003E907A /* Whats-Your-Age.png */; };
+		DB5486571D3FCD96003E907A /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5486561D3FCD96003E907A /* Cover.png */; };
+		DB5486591D3FD10B003E907A /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5486581D3FD10B003E907A /* Cover.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,13 @@
 		DB54863E1D3FC435003E907A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DB5486401D3FC435003E907A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DB5486411D3FC435003E907A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB5486481D3FCBC4003E907A /* 28541-NXEANP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "28541-NXEANP.jpg"; sourceTree = "<group>"; };
+		DB5486491D3FCBC4003E907A /* BkRound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BkRound.png; sourceTree = "<group>"; };
+		DB54864B1D3FCBC4003E907A /* Illustration05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Illustration05.jpg; sourceTree = "<group>"; };
+		DB54864C1D3FCBC4003E907A /* playBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playBtn.png; sourceTree = "<group>"; };
+		DB54864D1D3FCBC4003E907A /* Whats-Your-Age.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Whats-Your-Age.png"; sourceTree = "<group>"; };
+		DB5486561D3FCD96003E907A /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
+		DB5486581D3FD10B003E907A /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		DB5486161D3FC435003E907A = {
 			isa = PBXGroup;
 			children = (
+				DB5486561D3FCD96003E907A /* Cover.png */,
 				DB54862B1D3FC435003E907A /* AgeGame */,
 				DB5486241D3FC435003E907A /* Frameworks */,
 				DB5486221D3FC435003E907A /* Products */,
@@ -96,6 +111,12 @@
 		DB54862C1D3FC435003E907A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DB5486581D3FD10B003E907A /* Cover.png */,
+				DB5486481D3FCBC4003E907A /* 28541-NXEANP.jpg */,
+				DB5486491D3FCBC4003E907A /* BkRound.png */,
+				DB54864B1D3FCBC4003E907A /* Illustration05.jpg */,
+				DB54864C1D3FCBC4003E907A /* playBtn.png */,
+				DB54864D1D3FCBC4003E907A /* Whats-Your-Age.png */,
 				DB54862D1D3FC435003E907A /* AgeGame-Info.plist */,
 				DB54862E1D3FC435003E907A /* InfoPlist.strings */,
 				DB5486311D3FC435003E907A /* main.m */,
@@ -163,6 +184,13 @@
 				DB54863A1D3FC435003E907A /* Default@2x.png in Resources */,
 				DB54863C1D3FC435003E907A /* Default-568h@2x.png in Resources */,
 				DB54863F1D3FC435003E907A /* MainStoryboard.storyboard in Resources */,
+				DB54864E1D3FCBC4003E907A /* 28541-NXEANP.jpg in Resources */,
+				DB54864F1D3FCBC4003E907A /* BkRound.png in Resources */,
+				DB5486511D3FCBC4003E907A /* Illustration05.jpg in Resources */,
+				DB5486521D3FCBC4003E907A /* playBtn.png in Resources */,
+				DB5486531D3FCBC4003E907A /* Whats-Your-Age.png in Resources */,
+				DB5486571D3FCD96003E907A /* Cover.png in Resources */,
+				DB5486591D3FD10B003E907A /* Cover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +320,7 @@
 				DB5486471D3FC435003E907A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
